@@ -11,4 +11,6 @@
 
   :main ^:skip-aot crawler.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :jvm-opts ["--add-modules" "java.xml.bind"])
+
